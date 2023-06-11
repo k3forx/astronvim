@@ -33,7 +33,7 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
+          -- "*.go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -63,6 +63,18 @@ return {
         disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
+  },
+
+  text_icons = {
+    GitAdd = "[+]",
+    GitChange = "[/]",
+    GitConflict = "[!]",
+    GitDelete = "[-]",
+    GitIgnored = "[I]",
+    GitRenamed = "[R]",
+    GitStaged = "[S]",
+    GitUnstaged = "[U]",
+    GitUntracked = "[?]",
   },
 
   -- This function is run last and is a good place to configuring
